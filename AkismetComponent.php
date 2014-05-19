@@ -63,6 +63,14 @@ class AkismetComponent extends CComponent
 	}
 
 	/**
+     	* @param string $commentType
+     	*/
+    	public function setCommentType($commentType)
+    	{
+        	$this->_akismet->setCommentType($commentType);
+    	}
+    
+	/**
 	 * @param string $permalink
 	 */
 	public function setPermalink($permalink)
