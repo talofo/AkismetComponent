@@ -53,6 +53,14 @@ class AkismetComponent extends CComponent
 	{
 		$this->_akismet->setCommentAuthorEmail($authorEmail);
 	}
+	
+	/**
+	 * @param string $commentType
+     	 */
+    	public function setCommentType($commentType)
+    	{
+        	$this->_akismet->setCommentType($commentType);
+    	}
 
 	/**
 	 * @param string $commentBody
